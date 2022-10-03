@@ -1,0 +1,14 @@
+digraph "flowchart" {
+p0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.of"];
+p1 [label="DownloadFastQ"];
+p0 -> p1 [label="data"];
+
+p1 [label="DownloadFastQ"];
+p2 [label="Kallisto"];
+p1 -> p2;
+
+p2 [label="Kallisto"];
+p3 [shape=point];
+p2 -> p3;
+
+}
